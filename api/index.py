@@ -55,7 +55,6 @@ def check_banned():
             period = result.get('data', {}).get('period', 0)
 
             return jsonify({
-                "owner" : obinek
                 "player_id": player_id,
                 "is_banned": bool(is_banned),
                 "ban_period": period if is_banned else 0,
@@ -79,6 +78,6 @@ def check_key():
         })
     return jsonify({"status": "invalid"}), 401
 
-if __name__ == '__main__':
-    app.run(debug=True)
-          
+# Remove this line. It's unnecessary in serverless environments.
+# if __name__ == '__main__':
+#     app.run(debug=True)
