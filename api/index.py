@@ -55,6 +55,7 @@ def check_banned():
             period = result.get('data', {}).get('period', 0)
 
             return jsonify({
+                "owner" : obinek
                 "player_id": player_id,
                 "is_banned": bool(is_banned),
                 "ban_period": period if is_banned else 0,
