@@ -40,7 +40,7 @@ def check_banned(player_id):
 
             result = {
                 "credits": "@obiiyeuem",
-                "channel": "https://t.me/sharecodevn",
+                "channel": "https://t.me/ObiLikeBot",
                 "status": "BANNED" if is_banned else "NOT BANNED",
                 "ban_period": period if is_banned else 0,
                 "uid": player_id,
